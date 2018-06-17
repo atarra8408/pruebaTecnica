@@ -18,7 +18,6 @@ public class Enter implements Task {
 
 	@Override
 	public <T extends Actor> void performAs(T actor) {
-		System.out.println(optionMenu.getOption());
 		actor.attemptsTo(Click.on(DESKTOP_MENU.of(optionMenu.getOption())));
 	}
 

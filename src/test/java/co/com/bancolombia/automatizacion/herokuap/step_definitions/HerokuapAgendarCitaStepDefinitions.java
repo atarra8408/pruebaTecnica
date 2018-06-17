@@ -2,6 +2,10 @@ package co.com.bancolombia.automatizacion.herokuap.step_definitions;
 
 import org.openqa.selenium.WebDriver;
 
+import co.com.bancolombia.automatizacion.herokuap.model.Option;
+import co.com.bancolombia.automatizacion.herokuap.model.OptionMenu;
+import co.com.bancolombia.automatizacion.herokuap.tasks.Enter;
+import co.com.bancolombia.automatizacion.herokuap.tasks.GoTo;
 import co.com.bancolombia.automatizacion.herokuap.tasks.OpenTheBrowser;
 import co.com.bancolombia.automatizacion.herokuap.user_interface.HeroHomePage;
 import cucumber.api.DataTable;
@@ -28,12 +32,13 @@ public class HerokuapAgendarCitaStepDefinitions {
 	@Given("^that user want open the herokuapp platform$")
 	public void that_user_want_open_the_herokuapp_platform() throws Exception {
 	    heroUser.wasAbleTo(OpenTheBrowser.at(heroHomePage));
+	    heroUser.wasAbleTo(GoTo.to("http://automatizacion.herokuapp.com/pperez/"));
 	}
 
 
-	@And("^he want to open the page agendar citas$")
-	public void he_want_to_open_the_page_agendar_citas() throws Exception {
-	    
+	@And("^he want to open the page (.*)$")
+	public void he_want_to_open_the_page_agendar_citas(String strOption) throws Exception {
+	    heroUser.wasAbleTo(Enter.to(Option.valueOf(strOption.toUpperCase().replace(" ", "_")).menu()));
 	}
 
 	@When("^he schedules an appointment with the data$")

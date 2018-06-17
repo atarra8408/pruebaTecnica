@@ -8,7 +8,7 @@ Feature: schedule appointment
 
   Scenario Outline: Title of your scenario outline
     Given that user want open the herokuapp platform
-    And  he want to open the page agendar citas
+    And  he want to open the page Agendar cita
     When he schedules an appointment with the data
     		|<date>|<patientDocument>|<doctorDocument>|<observations>|
     Then he verifies that the appointment was scheduled 

@@ -1,8 +1,12 @@
 package co.com.bancolombia.automatizacion.herokuap.model;
 
 public enum Option {
-	AGENDAR_CITA(new OptionMenu("appointmentScheduling")),
-	AGREGAR_DOCTOR(new OptionMenu("addDoctor"))	;
+	AGREGAR_DOCTOR(new OptionMenu("addDoctor")),
+	AGREGAR_PACIENTE(new OptionMenu("addPatient")),
+	AGREGAR_HABITACION(new OptionMenu("addRoom")),
+	AGREGAR_HOSPITAL(new OptionMenu("addHospital")),
+	VER_HOSPITALES(new OptionMenu("hospitalList")),
+	AGENDAR_CITA(new OptionMenu("appointmentScheduling"));
 	
 	private OptionMenu optionMenu;
 	

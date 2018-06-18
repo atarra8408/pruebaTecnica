@@ -1,13 +1,16 @@
 package co.com.bancolombia.automatizacion.herokuap.step_definitions;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 
 import co.com.bancolombia.automatizacion.herokuap.model.Option;
-import co.com.bancolombia.automatizacion.herokuap.model.OptionMenu;
+import co.com.bancolombia.automatizacion.herokuap.tasks.Complete;
 import co.com.bancolombia.automatizacion.herokuap.tasks.Enter;
 import co.com.bancolombia.automatizacion.herokuap.tasks.GoTo;
 import co.com.bancolombia.automatizacion.herokuap.tasks.OpenTheBrowser;
 import co.com.bancolombia.automatizacion.herokuap.user_interface.HeroHomePage;
+import co.com.bancolombia.automatizacion.herokuap.util.Form;
 import cucumber.api.DataTable;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
@@ -42,8 +45,9 @@ public class HerokuapAgendarCitaStepDefinitions {
 	}
 
 	@When("^he schedules an appointment with the data$")
-	public void he_schedules_an_appointment_with_the_data(DataTable arg1) throws Exception {
-	    
+	public void he_schedules_an_appointment_with_the_data(DataTable data) throws Exception {
+		List<List<String>> listData=data.raw();
+		heroUser.wasAbleTo(Complete.the(Form.with(listData)));
 	}
 
 	@Then("^he verifies that the appointment was scheduled$")

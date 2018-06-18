@@ -47,7 +47,6 @@ public class HerokuapAgendarCitaStepDefinitions {
 	@When("^he schedules an appointment with the data$")
 	public void he_schedules_an_appointment_with_the_data(DataTable data) throws Exception {
 		List<List<String>> listData=data.raw();
-		System.out.println(listData.get(0).get(0));
 		heroUser.wasAbleTo(Complete.the(Form.with(listData)));
 	}
 

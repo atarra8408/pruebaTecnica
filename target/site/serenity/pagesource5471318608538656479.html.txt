@@ -1,0 +1,129 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<link href="../resources/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+<title>PSL - Agendar Cita</title>
+
+<!-- Bootstrap Core CSS -->
+<link href="../resources/css/bootstrap.min.css" rel="stylesheet" />
+
+<!-- Custom CSS -->
+<link href="../resources/css/sb-admin.css" rel="stylesheet" />
+
+<!-- Morris Charts CSS -->
+<link href="../resources/css/plugins/morris.css" rel="stylesheet" />
+
+<!-- JQUERY-UI CSS -->
+<link href="../resources/css/plugins/jquery-ui.min.css" rel="stylesheet" />
+
+<!-- Custom Fonts -->
+<link href="../resources/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body style="">
+
+	<div id="wrapper">
+
+		<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+			<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span>
+			<span class="icon-bar"></span> <span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="home">Inicio</a>
+	</div>
+	<!-- Top Menu Items -->
+	<!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+
+	<!-- /.navbar-collapse -->
+</nav>
+
+		<div id="page-wrapper">
+
+			<div class="container-fluid">
+				<!-- Page Heading -->
+				<div class="row">
+					<div class="col-lg-12">
+						<h1 class="page-header">
+							<small> Agendar cita</small>
+						</h1>
+						<!--                         <ol class="breadcrumb"> -->
+						<!--                             <li class="active"> -->
+						<!--                                 <i class="fa fa-dashboard"></i> Dashboard -->
+						<!--                             </li> -->
+						<!--                         </ol> -->
+					</div>
+				</div>
+				<div class="panel panel-warning">
+					<div class="panel-heading">
+						<h3 class="panel-title">Información:</h3>
+					</div>
+					<div class="panel-body">
+						<p>Permite agregar una cita entre un doctor y un paciente. Tanto el doctor como el paciente deben estar previamente creados. Se debe ingresar el documento de identidad de ambos</p>
+						<p>Se deben usar fechas mayores a la fecha actual.</p>
+						<p>Una vez se intente crear una cita en la siguiente pantalla se presentan los mensajes de éxito o de error, junto con una confirmación de los datos ingresados. </p>
+						<p>A menos que se le haya indicado algo diferente, diseñe y automatice los casos de pruebas que considere convenientes para esta pantalla.</p>
+				
+						</div>
+				</div>
+
+				<div class="row">
+						<div class="col-md-4">
+							<div class="form-group">
+								<label for="datepicker">Día de la cita<span class="text-danger">*</span></label> <input type="text" class="form-control hasDatepicker" id="datepicker" />
+							</div>
+							<div class="form-group">
+								<label for="patient-identification">Documento de identidad del paciente<span class="text-danger">*</span>
+								</label> <input type="text" class="form-control" placeholder="Ingrese el documento de identidad del paciente" />
+							</div>
+							<div class="form-group">
+								<label for="doctor-identification">Documento de identidad del doctor<span class="text-danger">*</span>
+								</label> <input type="text" class="form-control" placeholder="Ingrese el documento de identidad del doctor" />
+							</div>
+							<div class="form-group">
+								<label for="note">Observaciones
+								</label> <textarea class="form-control" placeholder="" rows="3"></textarea>
+							</div>
+
+							<a style="margin-bottom: 20px;" onclick="submitForm()" class="btn btn-primary pull-right">Guardar</a>
+						</div>
+				</div>
+				<!-- /.row -->
+
+			</div>
+			<!-- /.container-fluid -->
+
+		</div>
+		<!-- /#page-wrapper -->
+
+	</div>
+	<!-- /#wrapper -->
+
+	<!-- jQuery Version 1.11.0 -->
+	<script src="../resources/js/jquery-1.11.0.js"></script>
+
+	<!-- Bootstrap Core JavaScript -->
+	<script src="../resources/js/bootstrap.min.js"></script>
+	
+	<script src="../resources/js/plugins/jqueryui/jquery-ui.min.js"></script>
+	
+	<script src="../resources/js/app/appointment-scheduling.js"></script>
+	
+
+
+
+<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" style="position: absolute; left: 250px; top: 482px; z-index: 1; display: block;"><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a class="ui-datepicker-prev ui-corner-all" data-handler="prev" data-event="click" title="Prev"><span class="ui-icon ui-icon-circle-triangle-w">Prev</span></a><a class="ui-datepicker-next ui-corner-all" data-handler="next" data-event="click" title="Next"><span class="ui-icon ui-icon-circle-triangle-e">Next</span></a><div class="ui-datepicker-title"><span class="ui-datepicker-month">August</span> <span class="ui-datepicker-year">2018</span></div></div><table class="ui-datepicker-calendar"><thead><tr><th scope="col" class="ui-datepicker-week-end"><span title="Sunday">Su</span></th><th scope="col"><span title="Monday">Mo</span></th><th scope="col"><span title="Tuesday">Tu</span></th><th scope="col"><span title="Wednesday">We</span></th><th scope="col"><span title="Thursday">Th</span></th><th scope="col"><span title="Friday">Fr</span></th><th scope="col" class="ui-datepicker-week-end"><span title="Saturday">Sa</span></th></tr></thead><tbody><tr><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"> </td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"> </td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"> </td><td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">1</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">2</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">3</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">4</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">5</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">6</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">7</a></td><td class=" ui-datepicker-days-cell-over  ui-datepicker-current-day" data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default ui-state-active ui-state-hover" href="#">8</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">9</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">10</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">11</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">12</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">13</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">14</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">15</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">16</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">17</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">18</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">19</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">20</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">21</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">22</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">23</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">24</a></td><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">25</a></td></tr><tr><td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">26</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">27</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">28</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">29</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">30</a></td><td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2018"><a class="ui-state-default" href="#">31</a></td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled"> </td></tr></tbody></table></div></body></html>

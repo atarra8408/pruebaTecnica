@@ -22,7 +22,6 @@ public class Form {
 
 	private static DataForm gForm() {
 		dataForm = new DataForm(date,patientDocument,doctorDocument,observations);
-		System.out.println(date+patientDocument);
 		return dataForm;
 	}
 	

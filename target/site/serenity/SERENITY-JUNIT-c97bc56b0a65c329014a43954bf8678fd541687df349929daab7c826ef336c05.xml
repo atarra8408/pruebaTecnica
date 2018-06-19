@@ -1,1 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="schedule appointment" skipped="0" tests="2" time="43.43" timestamp="2018-06-19 09:46:16"><testcase name="Title of your scenario outline"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="schedule appointment" skipped="0" tests="2" time="48.08" timestamp="2018-06-19 11:27:26"><testcase name="Title of your scenario outline"><failure message="&#10;Expected: a string containing &quot;El campo 'Documento de identidades' no se encuentra entre nuestros doctores&quot;&#10;     but: was &quot;No se pudo guardar debido a:&#10;*El campo 'Documento de identidad' no se encuentra entre nuestros doctores.&quot;" type="java.lang.AssertionError">
+Expected: a string containing "El campo 'Documento de identidades' no se encuentra entre nuestros doctores"
+     but: was "No se pudo guardar debido a:
+*El campo 'Documento de identidad' no se encuentra entre nuestros doctores."</failure><system-err>
+Expected: a string containing "El campo 'Documento de identidades' no se encuentra entre nuestros doctores"
+     but: was "No se pudo guardar debido a:
+*El campo 'Documento de identidad' no se encuentra entre nuestros doctores."&#13;
+co.com.bancolombia.automatizacion.herokuap.step_definitions.HerokuappStepDefinitions.heVerifiesThatTheAppointmentWasNotScheduled(HerokuappStepDefinitions.java:69)&#13;
+✽.verify that the appointment was not scheduled(src/test/resources/features/herokuappAgendarCita.feature:30)&#13;
+</system-err></testcase></testsuite>

@@ -78,7 +78,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 19-06-2018 09:46</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 19-06-2018 11:27</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -107,7 +107,7 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                             <p class="tag">
                                 <span class="badge tag-badge" style="background:default;">
                                     <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;"
-                                                                      href="9a16e4558ed645ae7e73835e8d06ced7517756a3b15e7acf5dc6d49daa9a7456.html">Casoexitoso
+                                                                      href="42ea485c484318c8368c0a121d702ecff586b72bc34c964b6edfbd53a4772191.html">Casoalterno
                                     (tag)</a>
                                 </span>
                             </p>
@@ -119,9 +119,9 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span>
                             <span class="test-case-title">
-                                    <span class="success-color">
+                                    <span class="failing-color">
                                     Title of your scenario outline
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -138,7 +138,7 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
     <div class="story-title">
         <h3 class="story-header">Scenario Outline</h3>
 
-        <div class="scenario">Given that user want open the herokuapp platform http://automatizacion.herokuapp.com/pperez/<br>And he want to open the page Agendar cita<br>When he schedules an appointment with the data<br>Then he verifies that the appointment was scheduled</div>
+        <div class="scenario">Given that user want open the herokuapp platform http://automatizacion.herokuapp.com/pperez/<br>And he want to open the page Agendar cita<br>When he schedules an appointment with the data<br>Then verify that the appointment was not scheduled</div>
 
     </div>
 
@@ -165,29 +165,29 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                 </thead>
                 <tbody>
                     <tr>
-                        <td class="test-SUCCESS"><a href="#0">1</a></td>
-                            <td class="test-SUCCESS"><a href="#0">07/08/2018</a>
+                        <td class="test-FAILURE"><a href="#0">1</a></td>
+                            <td class="test-FAILURE"><a href="#0">07/08/2018</a>
                             </td>
-                            <td class="test-SUCCESS"><a href="#0">78906453</a>
+                            <td class="test-FAILURE"><a href="#0">78906453</a>
                             </td>
-                            <td class="test-SUCCESS"><a href="#0">68906453</a>
+                            <td class="test-FAILURE"><a href="#0">68906452</a>
                             </td>
-                            <td class="test-SUCCESS"><a href="#0">Quiero agendarla cita</a>
+                            <td class="test-FAILURE"><a href="#0">Quiero agendarla cita</a>
                             </td>
-                            <td class="test-SUCCESS"><a href="#0">Datos guardados correctamente.</a>
+                            <td class="test-FAILURE"><a href="#0">El campo 'Documento de identidades' no se encuentra entre nuestros doctores</a>
                             </td>
                     </tr>
                     <tr>
                         <td class="test-SUCCESS"><a href="#1">2</a></td>
-                            <td class="test-SUCCESS"><a href="#1">05/05/2018</a>
+                            <td class="test-SUCCESS"><a href="#1">08/08/2018</a>
                             </td>
-                            <td class="test-SUCCESS"><a href="#1">78906453</a>
+                            <td class="test-SUCCESS"><a href="#1">78906454</a>
                             </td>
                             <td class="test-SUCCESS"><a href="#1">68906453</a>
                             </td>
                             <td class="test-SUCCESS"><a href="#1">o</a>
                             </td>
-                            <td class="test-SUCCESS"><a href="#1"></a>
+                            <td class="test-SUCCESS"><a href="#1">El campo 'Documento de identidad' no se encuentra entre nuestros pacientes registrados.</a>
                             </td>
                     </tr>
                 </tbody>
@@ -211,12 +211,12 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                 <tr class="step-table-separator">
                     <td colspan="5"></td>
                 </tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-FAILURE">
                     <td width="60" class="step-icon">
                         <a name="0"/>
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block">
-                                <i class="fa fa-plus-square-o imgstepSection0 success-icon"
+                                <i class="fa fa-plus-square-o imgstepSection0 failure-icon"
                                    style="margin-left: 20px; float:left;  padding-right:5px"></i>
                             </a>
                     </td>
@@ -225,23 +225,16 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection0')"
                                style="display:block;">
                             <span class="top-level-step">
-                                Title of your scenario outline #1: {date=07/08/2018, patientDocument=78906453, doctorDocument=68906453, observations=Quiero agendarla cita, Mensaje=Datos guardados correctamente.}
+                                Title of your scenario outline #1: {date=07/08/2018, patientDocument=78906453, doctorDocument=68906452, observations=Quiero agendarla cita, Mensaje=El campo 'Documento de identidades' no se encuentra entre nuestros doctores}
                             </span>
                             </a>
 
                         </div>
                     </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=0">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="f45d90c8fc1581e4a3f53977435a9a252ab70b9bef2f0c74149478216d6a223c.png"
-                                         href="f45d90c8fc1581e4a3f53977435a9a252ab70b9bef2f0c74149478216d6a223c.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
+                        <td width="100" class="FAILURE-text">
                         </td>
-                    <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">19.6s</span></td>
+                    <td width="100"><span class="top-level-step">FAILURE</span></td>
+                    <td width="100"><span class="top-level-step">22.66s</span></td>
                 </tr>
                     <tr>
                     <td colspan="5">
@@ -262,7 +255,7 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
-                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=1">
+                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=0">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
                                     <img src="543abc819b3d3e4e11f9e352f2adeac4069587abfe9c0cc5f4eeb1427b2c5ae6.png"
                                          href="543abc819b3d3e4e11f9e352f2adeac4069587abfe9c0cc5f4eeb1427b2c5ae6.png"
@@ -271,7 +264,7 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                                 </a>
                         </td>
                     <td width="100"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">10.24s</span></td>
+                    <td width="100"><span class="nested-step">10.19s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -288,7 +281,7 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
-                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=2">
+                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=1">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
                                     <img src="8fb3f7cb5b93a74efab4952a6fa3313eb4bf88b2a5106ebaf0b78fda54146584.png"
                                          href="8fb3f7cb5b93a74efab4952a6fa3313eb4bf88b2a5106ebaf0b78fda54146584.png"
@@ -297,7 +290,7 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">7.49s</span></td>
+                    <td width="100"><span class="nested-group-step">7.55s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -314,7 +307,7 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
-                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=3">
+                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=2">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
                                     <img src="543abc819b3d3e4e11f9e352f2adeac4069587abfe9c0cc5f4eeb1427b2c5ae6.png"
                                          href="543abc819b3d3e4e11f9e352f2adeac4069587abfe9c0cc5f4eeb1427b2c5ae6.png"
@@ -323,7 +316,7 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">2.06s</span></td>
+                    <td width="100"><span class="nested-group-step">1.96s</span></td>
                 </tr>
 
                 <tr class="test-SUCCESS">
@@ -341,7 +334,7 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
-                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=5">
+                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=4">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
                                     <img src="285d50f0be40df95857be2fb2219c089545259dd09f14dd09f67463ab3cb6a55.png"
                                          href="285d50f0be40df95857be2fb2219c089545259dd09f14dd09f67463ab3cb6a55.png"
@@ -350,7 +343,7 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                                 </a>
                         </td>
                     <td width="100"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">2.56s</span></td>
+                    <td width="100"><span class="nested-step">4.4s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -367,7 +360,7 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
-                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=7">
+                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=6">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
                                     <img src="285d50f0be40df95857be2fb2219c089545259dd09f14dd09f67463ab3cb6a55.png"
                                          href="285d50f0be40df95857be2fb2219c089545259dd09f14dd09f67463ab3cb6a55.png"
@@ -376,7 +369,7 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1.95s</span></td>
+                    <td width="100"><span class="nested-group-step">3.74s</span></td>
                 </tr>
 
                 <tr class="test-SUCCESS">
@@ -388,22 +381,22 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                     <td>
                         <div class="step-description">
                             <span class="nested-step">
-                                When he schedules an appointment with the data<br><table class='embedded'><thead><th>07/08/2018</th><th>78906453</th><th>68906453</th><th>Quiero agendarla cita</th></thead><tbody></tbody></table>
+                                When he schedules an appointment with the data<br><table class='embedded'><thead><th>07/08/2018</th><th>78906453</th><th>68906452</th><th>Quiero agendarla cita</th></thead><tbody></tbody></table>
                             </span>
 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
-                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=9">
+                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=8">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="f45d90c8fc1581e4a3f53977435a9a252ab70b9bef2f0c74149478216d6a223c.png"
-                                         href="f45d90c8fc1581e4a3f53977435a9a252ab70b9bef2f0c74149478216d6a223c.png"
+                                    <img src="e46674c5a9cd51402707a7cde102e00c83368fc2e01e829c860acbd7e5ab828e.png"
+                                         href="e46674c5a9cd51402707a7cde102e00c83368fc2e01e829c860acbd7e5ab828e.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">5.89s</span></td>
+                    <td width="100"><span class="nested-step">6.74s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -420,7 +413,7 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
-                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=11">
+                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=10">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
                                     <img src="410f0eba0581d8d01ff77a63c8f4ff0be9bf24eda8f3865a13da918b2b46fec3.png"
                                          href="410f0eba0581d8d01ff77a63c8f4ff0be9bf24eda8f3865a13da918b2b46fec3.png"
@@ -429,7 +422,7 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1.2s</span></td>
+                    <td width="100"><span class="nested-group-step">1.34s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -446,7 +439,7 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
-                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=13">
+                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=12">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
                                     <img src="4ff18d39d097d35c54f1ddf626d075714d533fa61a5795f158784af129f68d25.png"
                                          href="4ff18d39d097d35c54f1ddf626d075714d533fa61a5795f158784af129f68d25.png"
@@ -455,7 +448,7 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1s</span></td>
+                    <td width="100"><span class="nested-group-step">1.1s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -466,42 +459,16 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                     <td>
                         <div class="step-description">
                             <span class="nested-group-step">
-                                heroUser enters '68906453' into Documento del paciente o doctor
+                                heroUser enters '68906452' into Documento del paciente o doctor
                             </span>
 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
-                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=15">
+                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=14">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
                                     <img src="f0f159245f088044ef2d59e4f9f5cc8e1c73bd03460d38447a656f5de465ded8.png"
                                          href="f0f159245f088044ef2d59e4f9f5cc8e1c73bd03460d38447a656f5de465ded8.png"
-                                         class="screenshot"
-                                         width="48" height="48"/>
-                                </a>
-                        </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0.97s</span></td>
-                </tr>
-                <tr class="test-SUCCESS">
-                    <td width="60" class="step-icon">
-                        
-                            <span style="margin-left: 60px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
-                    </td>
-                    <td>
-                        <div class="step-description">
-                            <span class="nested-group-step">
-                                heroUser enters 'Quiero agendarla cita' into Observaciones
-                            </span>
-
-                        </div>
-                    </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=17">
-                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="a00fe6f83a55707f5a9abaa81a5893d8ffb10473d1e2b5294514f7fb1c6b4e34.png"
-                                         href="a00fe6f83a55707f5a9abaa81a5893d8ffb10473d1e2b5294514f7fb1c6b4e34.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
@@ -518,50 +485,161 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                     <td>
                         <div class="step-description">
                             <span class="nested-group-step">
+                                heroUser enters 'Quiero agendarla cita' into Observaciones
+                            </span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=16">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="a00fe6f83a55707f5a9abaa81a5893d8ffb10473d1e2b5294514f7fb1c6b4e34.png"
+                                         href="a00fe6f83a55707f5a9abaa81a5893d8ffb10473d1e2b5294514f7fb1c6b4e34.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-group-step">1.43s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">
                                 heroUser clicks on Boton Guardar
                             </span>
 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
-                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=19">
+                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=18">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="f45d90c8fc1581e4a3f53977435a9a252ab70b9bef2f0c74149478216d6a223c.png"
-                                         href="f45d90c8fc1581e4a3f53977435a9a252ab70b9bef2f0c74149478216d6a223c.png"
+                                    <img src="e46674c5a9cd51402707a7cde102e00c83368fc2e01e829c860acbd7e5ab828e.png"
+                                         href="e46674c5a9cd51402707a7cde102e00c83368fc2e01e829c860acbd7e5ab828e.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0.97s</span></td>
+                    <td width="100"><span class="nested-group-step">1.08s</span></td>
                 </tr>
 
-                <tr class="test-SUCCESS">
+                <tr class="test-FAILURE">
                     <td width="60" class="step-icon">
                         
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                  class="nested-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">
-                                Then he verifies that the appointment was scheduled<br><table class='embedded'><thead><th>Datos guardados correctamente.</th></thead><tbody></tbody></table>
+                            <span class="nested-step">
+                                Then verify that the appointment was not scheduled<br><table class='embedded'><thead><th>El campo 'Documento de identidades' no se encuentra entre nuestros doctores</th></thead><tbody></tbody></table>
                             </span>
 
                         </div>
                     </td>
-                        <td width="100" class="SUCCESS-text">
-                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=21">
+                        <td width="100" class="FAILURE-text">
+                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=20">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="f45d90c8fc1581e4a3f53977435a9a252ab70b9bef2f0c74149478216d6a223c.png"
-                                         href="f45d90c8fc1581e4a3f53977435a9a252ab70b9bef2f0c74149478216d6a223c.png"
+                                    <img src="e46674c5a9cd51402707a7cde102e00c83368fc2e01e829c860acbd7e5ab828e.png"
+                                         href="e46674c5a9cd51402707a7cde102e00c83368fc2e01e829c860acbd7e5ab828e.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
-                    <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0.54s</span></td>
+                    <td width="100"><span class="nested-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-step">1.22s</span></td>
                 </tr>
+                <tr class="test-FAILURE">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-times-circle failure-icon ' title='FAILURE'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">
+                                Then the message should be a string containing 'El campo 'Documento de identidades' no se encuentra entre nuestros doctores'
+                            </span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="FAILURE-text">
+                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=21">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="e46674c5a9cd51402707a7cde102e00c83368fc2e01e829c860acbd7e5ab828e.png"
+                                         href="e46674c5a9cd51402707a7cde102e00c83368fc2e01e829c860acbd7e5ab828e.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-group-step">FAILURE</span></td>
+                    <td width="100"><span class="nested-group-step">0.8s</span></td>
+                </tr>
+                    <tr class="test-FAILURE">
+                        <td width="40">&nbsp</td>
+                        <td width="%" colspan="4" class="error-message-cell">
+                            <div class="error-message ellipsis"
+                                 title='Assertion error: Expected: a string containing &quot;El campo &#39;Documento de identidades&#39; no se encuentra entre nuestros doctores&quot; but: was &quot;No se pudo guardar debido a:*El campo &#39;Documento de identidad&#39; no se encuentra entre nuestros doctores.&quot;'>
+                                <pre>Assertion error: Expected: a string containing &quot;El campo &#39;Documento de identidades&#39; no se encuentra entre nuestros doctores&quot; but: was &quot;No se pudo guardar debido a:*El campo &#39;Documento de identidad&#39; no se encuen...</pre>
+                            </div>
+                <div><!-- Stack trace -->
+                    <button type="button" class="btn btn-danger" data-toggle="modal"
+                            data-target="#stacktraceModal-14">
+                        View details
+                    </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="stacktraceModal-14" tabindex="-1" role="dialog"
+                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="stacktraceModalLabel">
+                                    java.lang.AssertionError
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                    <h5>
+                                        <pre>Expected: a string containing &quot;El campo 'Documento de identidades' no se encuentra entre nuestros doctores&quot;<br>     but: was &quot;No se pudo guardar debido a:<br>*El campo 'Documento de identidad' no se encuentra entre nuestros doctores.&quot;</pre>
+                                    </h5>
+                                    co.com.bancolombia.automatizacion.herokuap.step_definitions.HerokuappStepDefinitions.heVerifiesThatTheAppointmentWasNotScheduled(HerokuappStepDefinitions.java
+                                    :69) <br>
+                                    cucumber.runner.Runner.runPickle(Runner.java
+                                    :80) <br>
+                                    org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java
+                                    :86) <br>
+                                    org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java
+                                    :38) <br>
+                                    org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java
+                                    :538) <br>
+                                    org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java
+                                    :760) <br>
+                                    org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java
+                                    :460) <br>
+                                    org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java
+                                    :206) <br>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        </td>
+                    </tr>
+
 
                     </table>
                     </td>
@@ -580,23 +658,23 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                             <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
                                style="display:block;">
                             <span class="top-level-step">
-                                Title of your scenario outline #2: {date=05/05/2018, patientDocument=78906453, doctorDocument=68906453, observations=o, Mensaje=}
+                                Title of your scenario outline #2: {date=08/08/2018, patientDocument=78906454, doctorDocument=68906453, observations=o, Mensaje=El campo 'Documento de identidad' no se encuentra entre nuestros pacientes registrados.}
                             </span>
                             </a>
 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
-                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=22">
+                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=23">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="6bb8199d3d4593134fab66427242dcc6eb21f693389e95654920cf50fabd0f40.png"
-                                         href="6bb8199d3d4593134fab66427242dcc6eb21f693389e95654920cf50fabd0f40.png"
+                                    <img src="02607bef8b7df59179d86f5dc8e01040fa7e5eccd62ad0f473542275575e1fcb.png"
+                                         href="02607bef8b7df59179d86f5dc8e01040fa7e5eccd62ad0f473542275575e1fcb.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="top-level-step">SUCCESS</span></td>
-                    <td width="100"><span class="top-level-step">18.19s</span></td>
+                    <td width="100"><span class="top-level-step">18.44s</span></td>
                 </tr>
                     <tr>
                     <td colspan="5">
@@ -617,7 +695,7 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
-                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=23">
+                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=24">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
                                     <img src="543abc819b3d3e4e11f9e352f2adeac4069587abfe9c0cc5f4eeb1427b2c5ae6.png"
                                          href="543abc819b3d3e4e11f9e352f2adeac4069587abfe9c0cc5f4eeb1427b2c5ae6.png"
@@ -643,7 +721,7 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
-                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=24">
+                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=25">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
                                     <img src="8fb3f7cb5b93a74efab4952a6fa3313eb4bf88b2a5106ebaf0b78fda54146584.png"
                                          href="8fb3f7cb5b93a74efab4952a6fa3313eb4bf88b2a5106ebaf0b78fda54146584.png"
@@ -652,7 +730,7 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">5.75s</span></td>
+                    <td width="100"><span class="nested-group-step">5.89s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -669,7 +747,7 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
-                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=25">
+                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=26">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
                                     <img src="543abc819b3d3e4e11f9e352f2adeac4069587abfe9c0cc5f4eeb1427b2c5ae6.png"
                                          href="543abc819b3d3e4e11f9e352f2adeac4069587abfe9c0cc5f4eeb1427b2c5ae6.png"
@@ -678,7 +756,7 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1.97s</span></td>
+                    <td width="100"><span class="nested-group-step">1.81s</span></td>
                 </tr>
 
                 <tr class="test-SUCCESS">
@@ -696,7 +774,7 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
-                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=27">
+                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=28">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
                                     <img src="285d50f0be40df95857be2fb2219c089545259dd09f14dd09f67463ab3cb6a55.png"
                                          href="285d50f0be40df95857be2fb2219c089545259dd09f14dd09f67463ab3cb6a55.png"
@@ -705,7 +783,7 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                                 </a>
                         </td>
                     <td width="100"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">2.31s</span></td>
+                    <td width="100"><span class="nested-step">2.35s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -722,7 +800,7 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
-                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=29">
+                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=30">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
                                     <img src="285d50f0be40df95857be2fb2219c089545259dd09f14dd09f67463ab3cb6a55.png"
                                          href="285d50f0be40df95857be2fb2219c089545259dd09f14dd09f67463ab3cb6a55.png"
@@ -743,22 +821,22 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                     <td>
                         <div class="step-description">
                             <span class="nested-step">
-                                When he schedules an appointment with the data<br><table class='embedded'><thead><th>05/05/2018</th><th>78906453</th><th>68906453</th><th>o</th></thead><tbody></tbody></table>
+                                When he schedules an appointment with the data<br><table class='embedded'><thead><th>08/08/2018</th><th>78906454</th><th>68906453</th><th>o</th></thead><tbody></tbody></table>
                             </span>
 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
-                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=31">
+                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=32">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="6bb8199d3d4593134fab66427242dcc6eb21f693389e95654920cf50fabd0f40.png"
-                                         href="6bb8199d3d4593134fab66427242dcc6eb21f693389e95654920cf50fabd0f40.png"
+                                    <img src="02607bef8b7df59179d86f5dc8e01040fa7e5eccd62ad0f473542275575e1fcb.png"
+                                         href="02607bef8b7df59179d86f5dc8e01040fa7e5eccd62ad0f473542275575e1fcb.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-step">7.02s</span></td>
+                    <td width="100"><span class="nested-step">6.36s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -769,22 +847,22 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                     <td>
                         <div class="step-description">
                             <span class="nested-group-step">
-                                heroUser enters '05/05/2018' into Dia de la cita
+                                heroUser enters '08/08/2018' into Dia de la cita
                             </span>
 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
-                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=33">
+                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=34">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="44dd1c30d30708bcbc0f89c3d64fe18ad0b659b8e52602de454216e42be11f6c.png"
-                                         href="44dd1c30d30708bcbc0f89c3d64fe18ad0b659b8e52602de454216e42be11f6c.png"
+                                    <img src="1a354afc7aec3f43f46399ae430eeacdc185305dfd0b6dbb9014ec01736f213d.png"
+                                         href="1a354afc7aec3f43f46399ae430eeacdc185305dfd0b6dbb9014ec01736f213d.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1.19s</span></td>
+                    <td width="100"><span class="nested-group-step">1.37s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -795,22 +873,22 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                     <td>
                         <div class="step-description">
                             <span class="nested-group-step">
-                                heroUser enters '78906453' into Documento del paciente o doctor
+                                heroUser enters '78906454' into Documento del paciente o doctor
                             </span>
 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
-                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=35">
+                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=36">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="f5e1151b447d372dd8ea06e81cb5cfa142f0943654a98de54f022e7ab3681aa7.png"
-                                         href="f5e1151b447d372dd8ea06e81cb5cfa142f0943654a98de54f022e7ab3681aa7.png"
+                                    <img src="e1fd2f3ea917ff0eaf55f12b7763355d27edd5fba3fc99d2945287f53918eddd.png"
+                                         href="e1fd2f3ea917ff0eaf55f12b7763355d27edd5fba3fc99d2945287f53918eddd.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0.97s</span></td>
+                    <td width="100"><span class="nested-group-step">1.22s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -827,16 +905,16 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
-                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=37">
+                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=38">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="40a263be68bc3832c641cbea26a4cbb32330732c108470b956e358691c332b9d.png"
-                                         href="40a263be68bc3832c641cbea26a4cbb32330732c108470b956e358691c332b9d.png"
+                                    <img src="e50fde1946e2ef58518a3f60f7bb9efdb3ef167fba5f86f26f1b10d84ae81744.png"
+                                         href="e50fde1946e2ef58518a3f60f7bb9efdb3ef167fba5f86f26f1b10d84ae81744.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">1s</span></td>
+                    <td width="100"><span class="nested-group-step">1.12s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -853,16 +931,16 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
-                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=39">
+                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=40">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="0ae0d3c6c9d98d450ffa862581294ae776668e426fb5732c62b328c670e4e355.png"
-                                         href="0ae0d3c6c9d98d450ffa862581294ae776668e426fb5732c62b328c670e4e355.png"
+                                    <img src="0c9e9451ade494249eb3cd6d6824204da0c3514876221391c2b4fc7b16bb74b9.png"
+                                         href="0c9e9451ade494249eb3cd6d6824204da0c3514876221391c2b4fc7b16bb74b9.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0.87s</span></td>
+                    <td width="100"><span class="nested-group-step">0.95s</span></td>
                 </tr>
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
@@ -879,52 +957,79 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
-                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=41">
+                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=42">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="6bb8199d3d4593134fab66427242dcc6eb21f693389e95654920cf50fabd0f40.png"
-                                         href="6bb8199d3d4593134fab66427242dcc6eb21f693389e95654920cf50fabd0f40.png"
+                                    <img src="02607bef8b7df59179d86f5dc8e01040fa7e5eccd62ad0f473542275575e1fcb.png"
+                                         href="02607bef8b7df59179d86f5dc8e01040fa7e5eccd62ad0f473542275575e1fcb.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">2.39s</span></td>
+                    <td width="100"><span class="nested-group-step">1.04s</span></td>
                 </tr>
 
                 <tr class="test-SUCCESS">
                     <td width="60" class="step-icon">
                         
                             <span style="margin-left: 40px; margin-right: 5px;"
-                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                                  class="nested-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
                     </td>
                     <td>
                         <div class="step-description">
-                            <span class="nested-group-step">
-                                Then he verifies that the appointment was scheduled<br><table class='embedded'><thead><th></th></thead><tbody></tbody></table>
+                            <span class="nested-step">
+                                Then verify that the appointment was not scheduled<br><table class='embedded'><thead><th>El campo 'Documento de identidad' no se encuentra entre nuestros pacientes registrados.</th></thead><tbody></tbody></table>
                             </span>
 
                         </div>
                     </td>
                         <td width="100" class="SUCCESS-text">
-                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=43">
+                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=44">
                                     <!-- Added invalid href-attribute to img for imgpreviewer -->
-                                    <img src="6bb8199d3d4593134fab66427242dcc6eb21f693389e95654920cf50fabd0f40.png"
-                                         href="6bb8199d3d4593134fab66427242dcc6eb21f693389e95654920cf50fabd0f40.png"
+                                    <img src="02607bef8b7df59179d86f5dc8e01040fa7e5eccd62ad0f473542275575e1fcb.png"
+                                         href="02607bef8b7df59179d86f5dc8e01040fa7e5eccd62ad0f473542275575e1fcb.png"
+                                         class="screenshot"
+                                         width="48" height="48"/>
+                                </a>
+                        </td>
+                    <td width="100"><span class="nested-step">SUCCESS</span></td>
+                    <td width="100"><span class="nested-step">1.36s</span></td>
+                </tr>
+                <tr class="test-SUCCESS">
+                    <td width="60" class="step-icon">
+                        
+                            <span style="margin-left: 60px; margin-right: 5px;"
+                                  class="nested-group-icon"><i class='fa fa-check-square-o success-icon ' title='SUCCESS'></i></span>
+                    </td>
+                    <td>
+                        <div class="step-description">
+                            <span class="nested-group-step">
+                                Then the message should be a string containing 'El campo 'Documento de identidad' no se encuentra entre nuestros pacientes registrados.'
+                            </span>
+
+                        </div>
+                    </td>
+                        <td width="100" class="SUCCESS-text">
+                                <a href="c97bc56b0a65c329014a43954bf8678fd541687df349929daab7c826ef336c05_screenshots.html#screenshots?screenshot=45">
+                                    <!-- Added invalid href-attribute to img for imgpreviewer -->
+                                    <img src="02607bef8b7df59179d86f5dc8e01040fa7e5eccd62ad0f473542275575e1fcb.png"
+                                         href="02607bef8b7df59179d86f5dc8e01040fa7e5eccd62ad0f473542275575e1fcb.png"
                                          class="screenshot"
                                          width="48" height="48"/>
                                 </a>
                         </td>
                     <td width="100"><span class="nested-group-step">SUCCESS</span></td>
-                    <td width="100"><span class="nested-group-step">0.54s</span></td>
+                    <td width="100"><span class="nested-group-step">0.73s</span></td>
                 </tr>
+
 
                     </table>
                     </td>
                     <tr>
-                <tr class="test-SUCCESS">
+                <tr class="test-FAILURE">
                     <td colspan="3"></td>
-                    <td width="100"><span class="top-level-step"><em>SUCCESS</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>43.43s</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>FAILURE</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>48.08s</em></span></td>
                 </tr>
 
             </table>

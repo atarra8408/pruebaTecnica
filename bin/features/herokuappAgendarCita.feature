@@ -17,8 +17,8 @@ Feature: schedule appointment
 
     Examples: 
       |date				 |patientDocument		|doctorDocument	 |observations					|Mensaje|
-      | 07/08/2018 |78906453					|68906453				 |Quiero agendarla cita |Datos guardados correctamente.	|
-      | 05/05/2018 |78906453					|68906453 			 |		o									|				|
+      | 07/08/2018 |78906453					|68906453				 |Quiero agendarla cita |Datos guardados correctamente|
+      | 05/05/2018 |78906453					|68906453 			 |		o									|Datos guardados correctamente|
       
       
    @CasoAlterno
@@ -32,6 +32,6 @@ Feature: schedule appointment
 
     Examples: 
       |date				 |patientDocument		|doctorDocument	 |observations					|Mensaje																																								|
-      | 07/08/2018 |78906453					|68906452				 |Quiero agendarla cita |El campo 'Documento de identidad' no se encuentra entre nuestros doctores							|
+      | 07/08/2018 |78906453					|68906452				 |Quiero agendarla cita |El campo 'Documento de identidades' no se encuentra entre nuestros doctores							|
       | 08/08/2018 |78906454					|68906453 			 |		o									|El campo 'Documento de identidad' no se encuentra entre nuestros pacientes registrados.|
       

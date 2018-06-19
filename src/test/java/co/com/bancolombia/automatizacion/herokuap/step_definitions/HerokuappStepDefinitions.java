@@ -1,10 +1,15 @@
 package co.com.bancolombia.automatizacion.herokuap.step_definitions;
 
+
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
+import static org.hamcrest.CoreMatchers.containsString;
+
 import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 
 import co.com.bancolombia.automatizacion.herokuap.model.Option;
+import co.com.bancolombia.automatizacion.herokuap.questions.TheMessage;
 import co.com.bancolombia.automatizacion.herokuap.tasks.Complete;
 import co.com.bancolombia.automatizacion.herokuap.tasks.CompletePointment;
 import co.com.bancolombia.automatizacion.herokuap.tasks.Enter;
@@ -22,6 +27,7 @@ import cucumber.api.java.en.When;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Managed;
+
 
 public class HerokuappStepDefinitions {
 	@Managed(driver="chrome")
@@ -58,11 +64,13 @@ public class HerokuappStepDefinitions {
 
 	@Then("^he verifies that the appointment was scheduled$")
 	public void heVerifiesThatTheAppointmentWasScheduled(DataTable data) throws Exception {
-	    
+		List<List<String>> listData=data.raw();
+		heroUser.should(seeThat(TheMessage.is(), containsString(listData.get(0).get(0))));
 	}
 	
-	@Then("^he verifies that the appointment was not scheduled$")
+	@Then("^verify that the appointment was not scheduled$")
 	public void heVerifiesThatTheAppointmentWasNotScheduled(DataTable data) throws Exception {
-	    
+		List<List<String>> listData=data.raw();
+		heroUser.should(seeThat(TheMessage.is(), containsString(listData.get(0).get(0))));
 	}
 }

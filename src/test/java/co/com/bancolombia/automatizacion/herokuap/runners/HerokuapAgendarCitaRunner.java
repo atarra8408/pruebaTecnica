@@ -9,8 +9,8 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 @CucumberOptions(
 		features = "src/test/resources/features/herokuappAgendarCita.feature",
 		glue = {"co.com.bancolombia.automatizacion.herokuap.step_definitions"},
-		tags= {"@CasoExitoso"}
-		//tags= {"@CasoAlterno"}
+		//tags= {"@CasoExitoso"}
+		tags= {"@CasoAlterno"}
 )
 
 public class HerokuapAgendarCitaRunner {

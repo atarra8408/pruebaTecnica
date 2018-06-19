@@ -111,7 +111,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 19-06-2018 09:46</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 19-06-2018 11:27</span>
     <br style="clear:left"/>
 </div>
 
@@ -141,7 +141,7 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                         <td valign="top" align="right">
                             <p class="tag">
                                 <span class="badge tag-badge" style="background:default;"
-                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="9a16e4558ed645ae7e73835e8d06ced7517756a3b15e7acf5dc6d49daa9a7456.html">Casoexitoso
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="42ea485c484318c8368c0a121d702ecff586b72bc34c964b6edfbd53a4772191.html">Casoalterno
                                     (tag)</a>
                                 </span>
                             </p>
@@ -153,9 +153,9 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span>
                             <span class="test-case-title">
-                                <span class="success-color">Title of your scenario outline
+                                <span class="failing-color">Title of your scenario outline
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -171,14 +171,61 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
 
     <div class="story-title">
         <h3>Scenario:</h3>
-        <div class="scenario">Given that user want open the herokuapp platform http://automatizacion.herokuapp.com/pperez/<br>And he want to open the page Agendar cita<br>When he schedules an appointment with the data<br>Then he verifies that the appointment was scheduled</div>
+        <div class="scenario">Given that user want open the herokuapp platform http://automatizacion.herokuapp.com/pperez/<br>And he want to open the page Agendar cita<br>When he schedules an appointment with the data<br>Then verify that the appointment was not scheduled</div>
     </div>
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+                        <div class="panel-heading title="Assertion error: Expected: a string containing 'El campo 'Documento de identidades' no se encuentra entre nuestros doctores' but: was 'No se pudo guardar debido a:*El campo 'Documento de identidad' no se encuentra entre nuestros doctores.'">
+                            Assertion error: Expected: a string containing 'El campo 'Documento de identidades' no se encuentra entre nuestros doctores' but: was 'No se pudo guardar debido a:*El campo 'Documento de identidad' no se encuentra entre nuestros doctores.'
+                        </div>
+                <div><!-- Stack trace -->
+                    <button type="button" class="btn btn-danger" data-toggle="modal"
+                            data-target="#stacktraceModal-overall">
+                        View details
+                    </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="stacktraceModal-overall" tabindex="-1" role="dialog"
+                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="stacktraceModalLabel">
+                                    java.lang.AssertionError
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                    <h5>
+                                        <pre>Expected: a string containing &quot;El campo 'Documento de identidades' no se encuentra entre nuestros doctores&quot;<br>     but: was &quot;No se pudo guardar debido a:<br>*El campo 'Documento de identidad' no se encuentra entre nuestros doctores.&quot;</pre>
+                                    </h5>
+                                    co.com.bancolombia.automatizacion.herokuap.step_definitions.HerokuappStepDefinitions.heVerifiesThatTheAppointmentWasNotScheduled(HerokuappStepDefinitions.java
+                                    :69) <br>
+                                    ✽.verify that the appointment was not scheduled(src/test/resources/features/herokuappAgendarCita.feature
+                                    :30) <br>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource7015399122358825468.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="f45d90c8fc1581e4a3f53977435a9a252ab70b9bef2f0c74149478216d6a223c.png" title="Title of your scenario outline #1: {date=07/08/2018, patientDocument=78906453, doctorDocument=68906453, observations=Quiero agendarla cita, Mensaje=Datos guardados correctamente.}" width="1034"/>
                 <img src="543abc819b3d3e4e11f9e352f2adeac4069587abfe9c0cc5f4eeb1427b2c5ae6.png" title="Given that user want open the herokuapp platform http://automatizacion.herokuapp.com/pperez/" width="1034"/>
                 <img src="8fb3f7cb5b93a74efab4952a6fa3313eb4bf88b2a5106ebaf0b78fda54146584.png" title="heroUser opens the Hero home page" width="1034"/>
                 <img src="8fb3f7cb5b93a74efab4952a6fa3313eb4bf88b2a5106ebaf0b78fda54146584.png" title="heroUser clicks on Link Inicial" width="1034"/>
@@ -188,22 +235,24 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                 <img src="543abc819b3d3e4e11f9e352f2adeac4069587abfe9c0cc5f4eeb1427b2c5ae6.png" title="heroUser clicks on Desktop Menu" width="1034"/>
                 <img src="285d50f0be40df95857be2fb2219c089545259dd09f14dd09f67463ab3cb6a55.png" title="heroUser clicks on Desktop Menu" width="1034"/>
                 <img src="285d50f0be40df95857be2fb2219c089545259dd09f14dd09f67463ab3cb6a55.png" title="When he schedules an appointment with the data
-| 07/08/2018 | 78906453 | 68906453 | Quiero agendarla cita |" width="1034"/>
-                <img src="f45d90c8fc1581e4a3f53977435a9a252ab70b9bef2f0c74149478216d6a223c.png" title="When he schedules an appointment with the data
-| 07/08/2018 | 78906453 | 68906453 | Quiero agendarla cita |" width="1034"/>
+| 07/08/2018 | 78906453 | 68906452 | Quiero agendarla cita |" width="1034"/>
+                <img src="e46674c5a9cd51402707a7cde102e00c83368fc2e01e829c860acbd7e5ab828e.png" title="When he schedules an appointment with the data
+| 07/08/2018 | 78906453 | 68906452 | Quiero agendarla cita |" width="1034"/>
                 <img src="285d50f0be40df95857be2fb2219c089545259dd09f14dd09f67463ab3cb6a55.png" title="heroUser enters '07/08/2018' into Dia de la cita" width="1034"/>
                 <img src="410f0eba0581d8d01ff77a63c8f4ff0be9bf24eda8f3865a13da918b2b46fec3.png" title="heroUser enters '07/08/2018' into Dia de la cita" width="1034"/>
                 <img src="301fba51b0453e4b2bab031a50bedcafa382d17684d9c5b10f321ea03b7116d8.png" title="heroUser enters '78906453' into Documento del paciente o doctor" width="1034"/>
                 <img src="4ff18d39d097d35c54f1ddf626d075714d533fa61a5795f158784af129f68d25.png" title="heroUser enters '78906453' into Documento del paciente o doctor" width="1034"/>
-                <img src="4ff18d39d097d35c54f1ddf626d075714d533fa61a5795f158784af129f68d25.png" title="heroUser enters '68906453' into Documento del paciente o doctor" width="1034"/>
-                <img src="f0f159245f088044ef2d59e4f9f5cc8e1c73bd03460d38447a656f5de465ded8.png" title="heroUser enters '68906453' into Documento del paciente o doctor" width="1034"/>
+                <img src="4ff18d39d097d35c54f1ddf626d075714d533fa61a5795f158784af129f68d25.png" title="heroUser enters '68906452' into Documento del paciente o doctor" width="1034"/>
+                <img src="f0f159245f088044ef2d59e4f9f5cc8e1c73bd03460d38447a656f5de465ded8.png" title="heroUser enters '68906452' into Documento del paciente o doctor" width="1034"/>
                 <img src="f0f159245f088044ef2d59e4f9f5cc8e1c73bd03460d38447a656f5de465ded8.png" title="heroUser enters 'Quiero agendarla cita' into Observaciones" width="1034"/>
                 <img src="a00fe6f83a55707f5a9abaa81a5893d8ffb10473d1e2b5294514f7fb1c6b4e34.png" title="heroUser enters 'Quiero agendarla cita' into Observaciones" width="1034"/>
-                <img src="a00fe6f83a55707f5a9abaa81a5893d8ffb10473d1e2b5294514f7fb1c6b4e34.png" title="heroUser clicks on Boton Guardar" width="1034"/>
-                <img src="f45d90c8fc1581e4a3f53977435a9a252ab70b9bef2f0c74149478216d6a223c.png" title="heroUser clicks on Boton Guardar" width="1034"/>
-                <img src="f45d90c8fc1581e4a3f53977435a9a252ab70b9bef2f0c74149478216d6a223c.png" title="Then he verifies that the appointment was scheduled
-| Datos guardados correctamente. |" width="1034"/>
-                <img src="6bb8199d3d4593134fab66427242dcc6eb21f693389e95654920cf50fabd0f40.png" title="Title of your scenario outline #2: {date=05/05/2018, patientDocument=78906453, doctorDocument=68906453, observations=o, Mensaje=}" width="1034"/>
+                <img src="cb560a2e862cb7ee26d941555d86b1aff5e81a4fcbcf3c7323e349818dc1ff18.png" title="heroUser clicks on Boton Guardar" width="1034"/>
+                <img src="e46674c5a9cd51402707a7cde102e00c83368fc2e01e829c860acbd7e5ab828e.png" title="heroUser clicks on Boton Guardar" width="1034"/>
+                <img src="e46674c5a9cd51402707a7cde102e00c83368fc2e01e829c860acbd7e5ab828e.png" title="Then verify that the appointment was not scheduled
+| El campo 'Documento de identidades' no se encuentra entre nuestros doctores |" width="1034"/>
+                <img src="e46674c5a9cd51402707a7cde102e00c83368fc2e01e829c860acbd7e5ab828e.png" title="Then the message should be a string containing 'El campo 'Documento de identidades' no se encuentra entre nuestros doctores'" width="1034"/>
+                <img src="e46674c5a9cd51402707a7cde102e00c83368fc2e01e829c860acbd7e5ab828e.png" title="Then the message should be a string containing 'El campo 'Documento de identidades' no se encuentra entre nuestros doctores'" width="1034"/>
+                <img src="02607bef8b7df59179d86f5dc8e01040fa7e5eccd62ad0f473542275575e1fcb.png" title="Title of your scenario outline #2: {date=08/08/2018, patientDocument=78906454, doctorDocument=68906453, observations=o, Mensaje=El campo 'Documento de identidad' no se encuentra entre nuestros pacientes registrados.}" width="1034"/>
                 <img src="543abc819b3d3e4e11f9e352f2adeac4069587abfe9c0cc5f4eeb1427b2c5ae6.png" title="Given that user want open the herokuapp platform http://automatizacion.herokuapp.com/pperez/" width="1034"/>
                 <img src="8fb3f7cb5b93a74efab4952a6fa3313eb4bf88b2a5106ebaf0b78fda54146584.png" title="heroUser opens the Hero home page" width="1034"/>
                 <img src="8fb3f7cb5b93a74efab4952a6fa3313eb4bf88b2a5106ebaf0b78fda54146584.png" title="heroUser clicks on Link Inicial" width="1034"/>
@@ -213,21 +262,22 @@ I want to schedule appointment in the Sistema de administraci�n de hospitales 
                 <img src="543abc819b3d3e4e11f9e352f2adeac4069587abfe9c0cc5f4eeb1427b2c5ae6.png" title="heroUser clicks on Desktop Menu" width="1034"/>
                 <img src="285d50f0be40df95857be2fb2219c089545259dd09f14dd09f67463ab3cb6a55.png" title="heroUser clicks on Desktop Menu" width="1034"/>
                 <img src="285d50f0be40df95857be2fb2219c089545259dd09f14dd09f67463ab3cb6a55.png" title="When he schedules an appointment with the data
-| 05/05/2018 | 78906453 | 68906453 | o |" width="1034"/>
-                <img src="6bb8199d3d4593134fab66427242dcc6eb21f693389e95654920cf50fabd0f40.png" title="When he schedules an appointment with the data
-| 05/05/2018 | 78906453 | 68906453 | o |" width="1034"/>
-                <img src="285d50f0be40df95857be2fb2219c089545259dd09f14dd09f67463ab3cb6a55.png" title="heroUser enters '05/05/2018' into Dia de la cita" width="1034"/>
-                <img src="44dd1c30d30708bcbc0f89c3d64fe18ad0b659b8e52602de454216e42be11f6c.png" title="heroUser enters '05/05/2018' into Dia de la cita" width="1034"/>
-                <img src="b0108deb20cf9fa57e108eb857352fb64e837692b1c815818037805674b579aa.png" title="heroUser enters '78906453' into Documento del paciente o doctor" width="1034"/>
-                <img src="f5e1151b447d372dd8ea06e81cb5cfa142f0943654a98de54f022e7ab3681aa7.png" title="heroUser enters '78906453' into Documento del paciente o doctor" width="1034"/>
-                <img src="f5e1151b447d372dd8ea06e81cb5cfa142f0943654a98de54f022e7ab3681aa7.png" title="heroUser enters '68906453' into Documento del paciente o doctor" width="1034"/>
-                <img src="40a263be68bc3832c641cbea26a4cbb32330732c108470b956e358691c332b9d.png" title="heroUser enters '68906453' into Documento del paciente o doctor" width="1034"/>
-                <img src="40a263be68bc3832c641cbea26a4cbb32330732c108470b956e358691c332b9d.png" title="heroUser enters 'o' into Observaciones" width="1034"/>
-                <img src="0ae0d3c6c9d98d450ffa862581294ae776668e426fb5732c62b328c670e4e355.png" title="heroUser enters 'o' into Observaciones" width="1034"/>
-                <img src="0ae0d3c6c9d98d450ffa862581294ae776668e426fb5732c62b328c670e4e355.png" title="heroUser clicks on Boton Guardar" width="1034"/>
-                <img src="6bb8199d3d4593134fab66427242dcc6eb21f693389e95654920cf50fabd0f40.png" title="heroUser clicks on Boton Guardar" width="1034"/>
-                <img src="6bb8199d3d4593134fab66427242dcc6eb21f693389e95654920cf50fabd0f40.png" title="Then he verifies that the appointment was scheduled
-|  |: <span class='success-color'>SUCCESS</span>" width="1034"/>
+| 08/08/2018 | 78906454 | 68906453 | o |" width="1034"/>
+                <img src="02607bef8b7df59179d86f5dc8e01040fa7e5eccd62ad0f473542275575e1fcb.png" title="When he schedules an appointment with the data
+| 08/08/2018 | 78906454 | 68906453 | o |" width="1034"/>
+                <img src="285d50f0be40df95857be2fb2219c089545259dd09f14dd09f67463ab3cb6a55.png" title="heroUser enters '08/08/2018' into Dia de la cita" width="1034"/>
+                <img src="1a354afc7aec3f43f46399ae430eeacdc185305dfd0b6dbb9014ec01736f213d.png" title="heroUser enters '08/08/2018' into Dia de la cita" width="1034"/>
+                <img src="1a354afc7aec3f43f46399ae430eeacdc185305dfd0b6dbb9014ec01736f213d.png" title="heroUser enters '78906454' into Documento del paciente o doctor" width="1034"/>
+                <img src="e1fd2f3ea917ff0eaf55f12b7763355d27edd5fba3fc99d2945287f53918eddd.png" title="heroUser enters '78906454' into Documento del paciente o doctor" width="1034"/>
+                <img src="e1fd2f3ea917ff0eaf55f12b7763355d27edd5fba3fc99d2945287f53918eddd.png" title="heroUser enters '68906453' into Documento del paciente o doctor" width="1034"/>
+                <img src="e50fde1946e2ef58518a3f60f7bb9efdb3ef167fba5f86f26f1b10d84ae81744.png" title="heroUser enters '68906453' into Documento del paciente o doctor" width="1034"/>
+                <img src="e50fde1946e2ef58518a3f60f7bb9efdb3ef167fba5f86f26f1b10d84ae81744.png" title="heroUser enters 'o' into Observaciones" width="1034"/>
+                <img src="0c9e9451ade494249eb3cd6d6824204da0c3514876221391c2b4fc7b16bb74b9.png" title="heroUser enters 'o' into Observaciones" width="1034"/>
+                <img src="0c9e9451ade494249eb3cd6d6824204da0c3514876221391c2b4fc7b16bb74b9.png" title="heroUser clicks on Boton Guardar" width="1034"/>
+                <img src="02607bef8b7df59179d86f5dc8e01040fa7e5eccd62ad0f473542275575e1fcb.png" title="heroUser clicks on Boton Guardar" width="1034"/>
+                <img src="02607bef8b7df59179d86f5dc8e01040fa7e5eccd62ad0f473542275575e1fcb.png" title="Then verify that the appointment was not scheduled
+| El campo 'Documento de identidad' no se encuentra entre nuestros pacientes registrados. |" width="1034"/>
+                <img src="02607bef8b7df59179d86f5dc8e01040fa7e5eccd62ad0f473542275575e1fcb.png" title="Then the message should be a string containing 'El campo 'Documento de identidad' no se encuentra entre nuestros pacientes registrados.': <span class='failing-color'>FAILURE</span>" width="1034"/>
             </div>
         </div>
 

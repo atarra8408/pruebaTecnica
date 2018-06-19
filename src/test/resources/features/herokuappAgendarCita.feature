@@ -6,6 +6,7 @@ Feature: schedule appointment
    As a herokuapp user
   I want to schedule appointment in the Sistema de administración de hospitales platform
 
+	@CasoExitoso
   Scenario Outline: Title of your scenario outline
     Given that user want open the herokuapp platform
     And  he want to open the page Agendar cita
@@ -14,6 +15,21 @@ Feature: schedule appointment
     Then he verifies that the appointment was scheduled 
 
     Examples: 
-      |date|patientDocument|doctorDocument|observations|
-      | 07/08/2018 |78906453					|68906453				 |Quiero agendarla cita |
-      | 08/08/2018 |78906454					|68906453 			 |		o									|
+      |date				 |patientDocument		|doctorDocument	 |observations					|Mensaje|
+      | 07/08/2018 |78906453					|68906453				 |Quiero agendarla cita |Datos guardados correctamente.	|
+      | 05/05/2018 |78906453					|68906453 			 |		o									|				|
+      
+      
+   @CasoAlterno
+  Scenario Outline: Title of your scenario outline
+    Given that user want open the herokuapp platform
+    And  he want to open the page Agendar cita
+    When he schedules an appointment with the data
+    |<date>|<patientDocument>|<doctorDocument>|<observations>|
+    Then he verifies that the appointment was scheduled 
+
+    Examples: 
+      |date				 |patientDocument		|doctorDocument	 |observations					|Mensaje																																								|
+      | 07/08/2018 |78906453					|68906452				 |Quiero agendarla cita |El campo 'Documento de identidad' no se encuentra entre nuestros doctores							|
+      | 08/08/2018 |78906454					|68906453 			 |		o									|El campo 'Documento de identidad' no se encuentra entre nuestros pacientes registrados.|
+      

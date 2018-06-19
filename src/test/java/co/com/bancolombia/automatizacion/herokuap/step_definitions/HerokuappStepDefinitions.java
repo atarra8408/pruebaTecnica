@@ -5,12 +5,14 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 
 import co.com.bancolombia.automatizacion.herokuap.model.Option;
-import co.com.bancolombia.automatizacion.herokuap.tasks.Complete;
+import co.com.bancolombia.automatizacion.herokuap.tasks.CompleteDoctor;
+import co.com.bancolombia.automatizacion.herokuap.tasks.CompletePointment;
 import co.com.bancolombia.automatizacion.herokuap.tasks.Enter;
 import co.com.bancolombia.automatizacion.herokuap.tasks.GoTo;
 import co.com.bancolombia.automatizacion.herokuap.tasks.OpenTheBrowser;
 import co.com.bancolombia.automatizacion.herokuap.user_interface.HeroHomePage;
-import co.com.bancolombia.automatizacion.herokuap.util.Form;
+import co.com.bancolombia.automatizacion.herokuap.util.FormDoctor;
+import co.com.bancolombia.automatizacion.herokuap.util.FormPointment;
 import cucumber.api.DataTable;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
@@ -21,7 +23,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Managed;
 
-public class HerokuapAgendarCitaStepDefinitions {
+public class HerokuappStepDefinitions {
 	@Managed(driver="chrome")
 	private WebDriver hisDriver;
 	private HeroHomePage heroHomePage;
@@ -47,7 +49,12 @@ public class HerokuapAgendarCitaStepDefinitions {
 	@When("^he schedules an appointment with the data$")
 	public void he_schedules_an_appointment_with_the_data(DataTable data) throws Exception {
 		List<List<String>> listData=data.raw();
-		heroUser.wasAbleTo(Complete.the(Form.with(listData)));
+		heroUser.wasAbleTo(CompletePointment.the(FormPointment.with(listData)));
+	}
+	@When("^he add an doctor with the data$")
+	public void he_add_an_doctor_with_the_data(DataTable data) throws Exception {
+		List<List<String>> listData=data.raw();
+		heroUser.wasAbleTo(CompleteDoctor.the(FormDoctor.with(listData)));
 	}
 
 	@Then("^he verifies that the appointment was scheduled$")

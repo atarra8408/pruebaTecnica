@@ -1,13 +1,13 @@
 package co.com.bancolombia.automatizacion.herokuap.model;
 
-public class DataForm {
+public class DataFormPointment {
 	
 	private String date;
 	private String patientDocument;
 	private String doctorDocument;
 	private String observations;
 
-	public DataForm (String date,String patientDocument,String doctorDocument,String observations) {
+	public DataFormPointment (String date,String patientDocument,String doctorDocument,String observations) {
 		this.date = date;
 		this.patientDocument = patientDocument;
 		this.doctorDocument = doctorDocument;

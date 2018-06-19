@@ -6,6 +6,7 @@ import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Open;
+import net.serenitybdd.screenplay.waits.WaitUntil;
 
 public class OpenTheBrowser implements Task{
 	
@@ -16,7 +17,7 @@ public class OpenTheBrowser implements Task{
 	}
 
 	@Override
-	public <T extends Actor> void performAs(T actor) {
+	public <T extends Actor> void performAs(T actor) {		
 		actor.attemptsTo(Open.browserOn(page));
 	}
 	

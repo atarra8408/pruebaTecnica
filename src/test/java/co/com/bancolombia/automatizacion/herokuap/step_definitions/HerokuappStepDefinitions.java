@@ -30,7 +30,7 @@ import net.thucydides.core.annotations.Managed;
 
 
 public class HerokuappStepDefinitions {
-	@Managed(driver="chrome")
+	@Managed
 	private WebDriver hisDriver;
 	private HeroHomePage heroHomePage;
 	private Actor heroUser = Actor.named("heroUser");

@@ -8,11 +8,12 @@ Feature: schedule appointment
 
 	@CasoExitoso
   Scenario Outline: Title of your scenario outline
-    Given that user want open the herokuapp platform
+    Given that user want open the herokuapp platform http://automatizacion.herokuapp.com/pperez/
     And  he want to open the page Agendar cita
     When he schedules an appointment with the data
     |<date>|<patientDocument>|<doctorDocument>|<observations>|
-    Then he verifies that the appointment was scheduled 
+    Then he verifies that the appointment was scheduled
+    |<Mensaje>| 
 
     Examples: 
       |date				 |patientDocument		|doctorDocument	 |observations					|Mensaje|
@@ -22,11 +23,12 @@ Feature: schedule appointment
       
    @CasoAlterno
   Scenario Outline: Title of your scenario outline
-    Given that user want open the herokuapp platform
+    Given that user want open the herokuapp platform http://automatizacion.herokuapp.com/pperez/
     And  he want to open the page Agendar cita
     When he schedules an appointment with the data
     |<date>|<patientDocument>|<doctorDocument>|<observations>|
-    Then he verifies that the appointment was scheduled 
+    Then verify that the appointment was not scheduled 
+    |<Mensaje>|
 
     Examples: 
       |date				 |patientDocument		|doctorDocument	 |observations					|Mensaje																																								|

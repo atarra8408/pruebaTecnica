@@ -5,13 +5,13 @@ import java.util.List;
 import org.openqa.selenium.WebDriver;
 
 import co.com.bancolombia.automatizacion.herokuap.model.Option;
-import co.com.bancolombia.automatizacion.herokuap.tasks.CompleteDoctor;
+import co.com.bancolombia.automatizacion.herokuap.tasks.Complete;
 import co.com.bancolombia.automatizacion.herokuap.tasks.CompletePointment;
 import co.com.bancolombia.automatizacion.herokuap.tasks.Enter;
 import co.com.bancolombia.automatizacion.herokuap.tasks.GoTo;
 import co.com.bancolombia.automatizacion.herokuap.tasks.OpenTheBrowser;
 import co.com.bancolombia.automatizacion.herokuap.user_interface.HeroHomePage;
-import co.com.bancolombia.automatizacion.herokuap.util.FormDoctor;
+import co.com.bancolombia.automatizacion.herokuap.util.Form;
 import co.com.bancolombia.automatizacion.herokuap.util.FormPointment;
 import cucumber.api.DataTable;
 import cucumber.api.java.Before;
@@ -34,31 +34,35 @@ public class HerokuappStepDefinitions {
 		heroUser.can(BrowseTheWeb.with(hisDriver));
 	}
 
-	@Given("^that user want open the herokuapp platform$")
-	public void that_user_want_open_the_herokuapp_platform() throws Exception {
+	@Given("^that user want open the herokuapp platform (.*)$")
+	public void thatUserWantOpenTheHerokuappPlatform(String url) throws Exception {
 	    heroUser.wasAbleTo(OpenTheBrowser.at(heroHomePage));
-	    heroUser.wasAbleTo(GoTo.to("http://automatizacion.herokuapp.com/pperez/"));
+	    heroUser.wasAbleTo(GoTo.to(url));
 	}
 
-
 	@And("^he want to open the page (.*)$")
-	public void he_want_to_open_the_page_agendar_citas(String strOption) throws Exception {
+	public void heWantToOpenThePage(String strOption) throws Exception {
 	    heroUser.wasAbleTo(Enter.to(Option.valueOf(strOption.toUpperCase().replace(" ", "_")).menu()));
 	}
 
 	@When("^he schedules an appointment with the data$")
-	public void he_schedules_an_appointment_with_the_data(DataTable data) throws Exception {
+	public void heSchedulesAnAppointmentWithTheData(DataTable data) throws Exception {
 		List<List<String>> listData=data.raw();
 		heroUser.wasAbleTo(CompletePointment.the(FormPointment.with(listData)));
 	}
-	@When("^he add an doctor with the data$")
-	public void he_add_an_doctor_with_the_data(DataTable data) throws Exception {
+	@When("^he add an people with the data$")
+	public void heAddAnPeopleWithTheData(DataTable data) throws Exception {
 		List<List<String>> listData=data.raw();
-		heroUser.wasAbleTo(CompleteDoctor.the(FormDoctor.with(listData)));
+		heroUser.wasAbleTo(Complete.the(Form.with(listData)));
 	}
 
 	@Then("^he verifies that the appointment was scheduled$")
-	public void he_verifies_that_the_appointment_was_scheduled() throws Exception {
+	public void heVerifiesThatTheAppointmentWasScheduled(DataTable data) throws Exception {
+	    
+	}
+	
+	@Then("^he verifies that the appointment was not scheduled$")
+	public void heVerifiesThatTheAppointmentWasNotScheduled(DataTable data) throws Exception {
 	    
 	}
 }

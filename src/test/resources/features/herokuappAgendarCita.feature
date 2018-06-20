@@ -12,7 +12,7 @@ Feature: schedule appointment
     And  he want to open the page Agendar cita
     When he schedules an appointment with the data
     |<date>|<patientDocument>|<doctorDocument>|<observations>|
-    Then he verifies that the appointment was scheduled
+     Then verify that it was successfully added
     |<Mensaje>| 
 
     Examples: 
@@ -27,11 +27,11 @@ Feature: schedule appointment
     And  he want to open the page Agendar cita
     When he schedules an appointment with the data
     |<date>|<patientDocument>|<doctorDocument>|<observations>|
-    Then verify that the appointment was not scheduled 
+    Then verify that it has not been added correctly 
     |<Mensaje>|
 
     Examples: 
       |date				 |patientDocument		|doctorDocument	 |observations					|Mensaje																																								|
-      | 07/08/2018 |78906453					|68906452				 |Quiero agendarla cita |El campo 'Documento de identidades' no se encuentra entre nuestros doctores							|
-      | 08/08/2018 |78906454					|68906453 			 |		o									|El campo 'Documento de identidad' no se encuentra entre nuestros pacientes registrados.|
+      | 07/08/2018 |78906453					|68906452				 |Quiero agendarla cita |El campo 'Documento de identidad' no se encuentra entre nuestros doctores							|
+      | 08/08/2018 |78906454					|68906453 			 |		o									|El campo 'Documento de identidad' no se encuentra entre nuestros pacientes registrados|
       

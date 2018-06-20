@@ -60,17 +60,18 @@ public class HerokuappStepDefinitions {
 	public void heAddAnPeopleWithTheData(DataTable data) throws Exception {
 		List<List<String>> listData=data.raw();
 		heroUser.wasAbleTo(Complete.the(Form.with(listData)));
-	}
+	}	
 
-	@Then("^he verifies that the appointment was scheduled$")
-	public void heVerifiesThatTheAppointmentWasScheduled(DataTable data) throws Exception {
+	@Then("^verify that it was successfully added$")
+	public void verifyThatItWasSuccessfullyAdded(DataTable data) throws Exception {
 		List<List<String>> listData=data.raw();
 		heroUser.should(seeThat(TheMessage.is(), containsString(listData.get(0).get(0))));
 	}
 	
-	@Then("^verify that the appointment was not scheduled$")
-	public void heVerifiesThatTheAppointmentWasNotScheduled(DataTable data) throws Exception {
+	@Then("^verify that it has not been added correctly$")
+	public void heVerifyThatItHasNotBeenAddedCorrectly(DataTable data) throws Exception {
 		List<List<String>> listData=data.raw();
 		heroUser.should(seeThat(TheMessage.is(), containsString(listData.get(0).get(0))));
 	}
+	
 }
